@@ -12,7 +12,7 @@ interface Props {
 
 export default function Filtros({ filtro, setFiltro }: Props) {
     function selecionarFiltro (opcao: IOpcao) {
-        if(filtro === opcao.id) return setFiltro(null)
+        if(filtro === opcao.id) return setFiltro(null);
         return setFiltro(opcao.id);
     }
     return (
@@ -22,12 +22,12 @@ export default function Filtros({ filtro, setFiltro }: Props) {
                     [styles.filtros__filtro]: true,
                     [styles['filtros__filtro--ativo']]: filtro === opcao.id
                 })} 
-                    key={opcao.id} 
-                    onClick={() => selecionarFiltro(opcao)}
+                key={opcao.id} 
+                onClick={() => selecionarFiltro(opcao)}
                 >
                     {opcao.label}
                 </button>
             ))}
         </div>
-    )
+    );
 }
