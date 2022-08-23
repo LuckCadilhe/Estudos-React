@@ -32,7 +32,8 @@
     ],
     "quotes": [
       "error",
-      "single"
+      "single",
+      "editor.maxTokenizationLineLength"
     ],
     "semi": [
       "error",
